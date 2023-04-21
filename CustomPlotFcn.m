@@ -6,8 +6,8 @@ function [state, options, optchanged] = CustomPlotFcn(options, state, flag)
         % Inicjalizacja wykresu
         hold on;
         xlabel('Numer pokolenia');
-        ylabel('Wartość funkcji celu');
-        title('Wartości funkcji celu w zależności od pokolenia');
+        ylabel('Wartosc funkcji celu');
+        title('Wartosci funkcji celu w zaleznosci od pokolenia');
         set(gca, 'YScale', 'linear');
         grid on;
     elseif strcmp(flag, 'iter')
@@ -24,6 +24,6 @@ function [state, options, optchanged] = CustomPlotFcn(options, state, flag)
         %plot(state.Generation, var_score, 'mo');
         
         % Aktualizacja legendy
-        legend('Minimum', 'Średnia', 'Maksimum', 'Location', 'best');
+        legend('Minimum', 'Srednia', 'Maksimum', 'Location', 'best');
     end
 end
